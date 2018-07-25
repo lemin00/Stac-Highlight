@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/error"
+            android:title="공지사항" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/chicken"
+            android:title="개발자에게 치킨사주기" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/feedbackicon"
+            android:title="피드백하기" />
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/setting"
+            android:title="설정" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="공유하기" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="신고하기" />
+        </menu>
+    </item>
+
+</menu>

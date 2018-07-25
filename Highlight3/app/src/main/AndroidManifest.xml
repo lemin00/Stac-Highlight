@@ -20,8 +20,11 @@
         </activity>
         <activity android:name=".RegisterActivity" />
         <activity android:name=".ChooseActivity" />
-        <activity android:name=".MainManuActivity" />
-        <activity android:name=".LoginActivity"></activity>
+        <activity android:name=".LoginActivity" />
+        <activity
+            android:name=".Navigation_Drawer_Activity"
+            android:label="@string/title_activity_navigation__drawer_"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
