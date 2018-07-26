@@ -23,7 +23,7 @@ public class MainManuActivity extends AppCompatActivity implements NavigationVie
 
     private String[] names = {"Charlie","Andrew","Han","Liz","Thomas","Sky","Andy","Lee","Park"};
     private static final int LAYOUT = R.layout.activity_navigation__drawer_;
-    private A mainBinding;
+    private int Recyclerid = R.layout.content_navigation__drawer_;
     private RecyclerView.Adapter adapter;
 
 
