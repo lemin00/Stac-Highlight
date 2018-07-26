@@ -1,8 +1,10 @@
 package com.smc.android.highlight;
 
+import android.content.ClipData;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
@@ -15,11 +17,12 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class MainManuActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
+import java.util.ArrayList;
 
-    private RecyclerView mRecyclerView;
-    private RecyclerView.Adapter mAdapter;
-    private RecyclerView.LayoutManager mLayoutManager;
+public class MainManuActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
+    RecyclerView mRecyclerView;
+    LinearLayoutManager mLayoutManager;
+    RecyclerViewAdapter mAdapter;
 
     private String[] names = {"Charlie","Andrew","Han","Liz","Thomas","Sky","Andy","Lee","Park"};
     private static final int LAYOUT = R.layout.activity_navigation__drawer_;
@@ -43,6 +46,26 @@ public class MainManuActivity extends AppCompatActivity implements NavigationVie
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        mRecyclerView = (RecyclerView) findViewById(R.id.recycleLayout);
+        mLayoutManager = new LinearLayoutManager(this);
+        mLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
+        // ArrayList 에 Item 객체(데이터) 넣기
+        ArrayList<ClipData.Item> items = new ArrayList();
+        items.add(new ClipData.Item("근의 공식", "이민혁     20 하이라이트"));
+        items.add(new ClipData.Item("한국사 정리", "이민혁     20 하이라이트"));
+        items.add(new ClipData.Item("3", "셋"));
+        items.add(new ClipData.Item("4", "넷"));
+        items.add(new ClipData.Item("5", "다섯"));
+        // LinearLayout으로 설정
+        mRecyclerView.setLayoutManager(mLayoutManager);
+        // Animation Defualt 설정
+        mRecyclerView.setItemAnimator(new DefaultItemAnimator());
+        // Decoration 설정
+        // mRecyclerView.addItemDecoration(new RecyclerViewDecoration(this, RecyclerViewDecoration.VERTICAL_LIST));
+        // Adapter 생성
+        mAdapter = new RecyclerViewAdapter(items);
+        mRecyclerView.setAdapter(mAdapter);
     }
 
     @Override
