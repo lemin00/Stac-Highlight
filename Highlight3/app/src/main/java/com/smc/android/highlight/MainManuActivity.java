@@ -125,7 +125,7 @@ public class MainManuActivity extends AppCompatActivity implements NavigationVie
 
         }
 
-        BottomNavigationView bottomNavigationView = null;
+        BottomNavigationView bottomNavigationView = (BottomNavigationView) findViewById(R.id.Bottom_Menu);
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
