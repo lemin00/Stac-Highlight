@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/bm_main"
+        app:showAsAction="ifRoom"
+        android:enabled="true"
+        android:icon="@android:drawable/ic_dialog_info"
+        android:title="Main" />
+    <item
+        android:id="@+id/bm_follower"
+        app:showAsAction="ifRoom"
+        android:enabled="true"
+        android:icon="@android:drawable/ic_dialog_info"
+        android:title="Follower" />
+    <item
+        android:id="@+id/bm_camera"
+        app:showAsAction="ifRoom"
+        android:icon="@android:drawable/ic_dialog_info"
+        android:title="Camera" />
+    <item
+        android:id="@+id/bm_mypage"
+        app:showAsAction="ifRoom"
+        android:enabled="true"
+        android:icon="@android:drawable/ic_dialog_info"
+        android:title="Mypage" />
+    <item
+        android:id="@+id/bm_none"
+        app:showAsAction="ifRoom"
+        android:enabled="true"
+        android:icon="@android:drawable/ic_dialog_info"
+        android:title="Camera" />
+</menu>

@@ -2,6 +2,7 @@ package com.smc.android.highlight;
 
 import android.content.ClipData;
 import android.content.Context;
+import android.provider.ContactsContract;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -15,6 +16,11 @@ import com.google.firebase.database.FirebaseDatabase;
 import java.util.ArrayList;
 
 public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewHolder> {
+
+    DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference();
+    DatabaseReference dbR = databaseReference.child("name").child("Lee");
+
+    TextView textView;
 
     private ArrayList<ClipData.Item> mItems;
     Context mContext;

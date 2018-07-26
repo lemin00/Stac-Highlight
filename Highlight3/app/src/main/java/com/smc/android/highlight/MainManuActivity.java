@@ -2,6 +2,8 @@ package com.smc.android.highlight;
 
 import android.content.ClipData;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
+import android.support.design.widget.BottomNavigationView;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.widget.DefaultItemAnimator;
@@ -122,6 +124,26 @@ public class MainManuActivity extends AppCompatActivity implements NavigationVie
         } else if (id == R.id.nav_send) {
 
         }
+
+        BottomNavigationView bottomNavigationView = null;
+        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                switch (item.getItemId()) {
+                    case R.id.bm_main:
+                        return true;
+                    case R.id.bm_follower:
+                        return true;
+                    case R.id.bm_camera:
+                        return true;
+                    case R.id.bm_mypage:
+                        return true;
+                    case R.id.bm_none:
+                        return true;
+                }
+                return false;
+            }
+        });
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
