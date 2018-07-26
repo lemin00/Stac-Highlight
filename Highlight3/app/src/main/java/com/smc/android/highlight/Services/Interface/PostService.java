@@ -1,6 +1,6 @@
-package com.example.gram.highlight.Services.Interface;
+package com.smc.android.highlight.Services.Interface;
 
-import com.example.gram.highlight.Models.PostModel;
+import com.smc.android.highlight.Models.PostModel;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package com.example.gram.highlight;
+package com.smc.android.highlight;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;

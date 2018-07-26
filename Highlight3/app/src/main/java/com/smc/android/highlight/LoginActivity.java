@@ -1,4 +1,4 @@
-package com.example.gram.highlight;
+package com.smc.android.highlight;
 
 import android.content.Intent;
 import android.support.annotation.NonNull;
@@ -10,7 +10,7 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
-import com.example.gram.highlight.R;
+import com.smc.android.highlight.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -39,23 +39,8 @@ public class LoginActivity extends AppCompatActivity {
         sign_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String email = email_login.getText().toString().trim();
-                String pwd = pwd_login.getText().toString().trim();
-
-                firebaseAuth.signInWithEmailAndPassword(email, pwd)
-                        .addOnCompleteListener(LoginActivity.this, new OnCompleteListener<AuthResult>() {
-                            @Override
-                            public void onComplete(@NonNull Task<AuthResult> task) {
-                                if (task.isSuccessful()) {
-                                    Toast.makeText(LoginActivity.this, "로그인 성공", Toast.LENGTH_SHORT).show();
-                                    Intent intent = new Intent(LoginActivity.this, Navigation_Drawer_Activity.class);
-                                    startActivity(intent);
-                                } else {
-                                    Toast.makeText(LoginActivity.this, "로그인 오류", Toast.LENGTH_SHORT).show();
-                                }
-                            }
-                        });
-
+                Intent intent = new Intent(getApplicationContext(), MainManuActivity.class);
+                startActivity(intent);
             }
         });
 

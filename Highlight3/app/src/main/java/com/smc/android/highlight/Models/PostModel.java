@@ -1,4 +1,4 @@
-package com.example.gram.highlight.Models;
+package com.smc.android.highlight.Models;
 
 public class PostModel {
 

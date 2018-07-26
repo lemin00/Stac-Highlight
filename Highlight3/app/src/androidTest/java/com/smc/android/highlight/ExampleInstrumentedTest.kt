@@ -1,4 +1,4 @@
-package com.example.gram.highlight
+package com.smc.android.highlight
 
 import android.support.test.InstrumentationRegistry
 import android.support.test.runner.AndroidJUnit4

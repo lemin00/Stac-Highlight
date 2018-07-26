@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.gram.highlight">
+    package="com.smc.android.highlight">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -22,9 +22,11 @@
         <activity android:name=".ChooseActivity" />
         <activity android:name=".LoginActivity" />
         <activity
-            android:name=".Navigation_Drawer_Activity"
+            android:name=".MainManuActivity"
             android:label="@string/title_activity_navigation__drawer_"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
     </application>
 
 </manifest>

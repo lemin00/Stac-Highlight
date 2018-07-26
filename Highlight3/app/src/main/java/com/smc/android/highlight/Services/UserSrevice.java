@@ -1,10 +1,10 @@
-package com.example.gram.highlight.Services;
+package com.smc.android.highlight.Services;
 
-import com.example.gram.highlight.Models.UserModel;
+import com.smc.android.highlight.Models.UserModel;
 
 import java.util.List;
 
-import static com.example.gram.highlight.Models.DummyDaraSource.DummyUsers;
+import static com.smc.android.highlight.Models.DummyDaraSource.DummyUsers;
 
 public class UserSrevice {
 
