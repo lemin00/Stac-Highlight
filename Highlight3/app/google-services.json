@@ -23,6 +23,14 @@
           }
         },
         {
+          "client_id": "957331802172-rpl41q6b68bpsb0qfvohelmpo8tadute.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.smc.android.highlight",
+            "certificate_hash": "83705bd06988d4a15200b372b15a4b9d73b3c4aa"
+          }
+        },
+        {
           "client_id": "957331802172-b1on5hrvqboie0tm8ecqdvfdtut7ibqm.apps.googleusercontent.com",
           "client_type": 3
         }
