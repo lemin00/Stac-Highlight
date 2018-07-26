@@ -1,4 +1,4 @@
-package com.example.gram.highlight;
+package com.smc.android.highlight;
 
 import android.content.Intent;
 import android.os.Handler;
@@ -6,8 +6,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 
-import com.example.gram.highlight.Models.PostModel;
-import com.example.gram.highlight.Services.Interface.PostService;
+import com.smc.android.highlight.Models.PostModel;
+
+import com.smc.android.highlight.Services.Interface.PostService;
 
 import java.util.List;
 

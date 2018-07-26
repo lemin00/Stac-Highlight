@@ -2,11 +2,11 @@ apply plugin: 'com.android.application'
 
 
 android {
-    compileSdkVersion 27
+    compileSdkVersion 28
     defaultConfig {
-        applicationId "com.example.gram.highlight"
+        applicationId "com.smc.android.highlight"
         minSdkVersion 16
-        targetSdkVersion 27
+        targetSdkVersion 28
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -34,5 +34,7 @@ dependencies {
     implementation 'com.google.firebase:firebase-core:16.0.1'
     implementation 'com.firebaseui:firebase-ui:4.1.0'
     implementation 'com.facebook.android:facebook-android-sdk:[4,5)'
+    implementation 'com.google.android.gms:play-services-ads:15.0.1'
+
 }
 apply plugin: 'com.google.gms.google-services'

@@ -1,10 +1,9 @@
-package com.example.gram.highlight.Services;
+package com.smc.android.highlight.Services;
 
-import com.example.gram.highlight.Models.UserModel;
+import com.smc.android.highlight.Models.UserModel;
+import com.smc.android.highlight.Models.DummyDaraSource;
 
 import java.util.List;
-
-import static com.example.gram.highlight.Models.DummyDaraSource.DummyUsers;
 
 public class UserSrevice {
 
@@ -22,7 +21,7 @@ public class UserSrevice {
 
     public static List<UserModel> FetchAllUser(){
         if (TEST_MODE){
-            return DummyUsers;
+            return DummyDaraSource.DummyUsers;
         }                                                               //서버에 요청넣었는데 서버와 연결이안되있으면  더미유저보냄
         else {
             //REAL LOGIC

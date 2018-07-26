@@ -1,9 +1,10 @@
-package com.example.gram.highlight;
+package com.smc.android.highlight;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+
 
 public class ChooseActivity extends AppCompatActivity {
 
@@ -13,14 +14,15 @@ public class ChooseActivity extends AppCompatActivity {
         setContentView(R.layout.activity_choose);
     }
 
+    public void RegisterButtonClicked(View v){
+        Intent RegisterIntent = new Intent (getApplicationContext(),RegisterActivity.class);
+        startActivity(RegisterIntent);
+    }
+
     public void LoginButtonClicked(View v){
         Intent LoginIntent = new Intent (getApplicationContext(),LoginActivity.class);
         startActivity(LoginIntent);
     }
 
-    public void RegisterButtonClicked(View v){
-        Intent RegisterIntent = new Intent (getApplicationContext(),RegisterActivity.class);
-        startActivity(RegisterIntent);
-    }
 
 }

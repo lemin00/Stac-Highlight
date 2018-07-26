@@ -96,6 +96,37 @@
     },
     {
       "client_info": {
+        "mobilesdk_app_id": "1:435517018517:android:b8ebc093d07b12c3",
+        "android_client_info": {
+          "package_name": "com.smc.android.highlight"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "435517018517-5teql7vudf6r6ai0h3hurf8udaf5nj48.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBfzCUb41J_2ew9UMfizmZh9mYulpJhXHE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
         "mobilesdk_app_id": "1:435517018517:android:3c8d52ed1f39c4f8",
         "android_client_info": {
           "package_name": "com.test.test"

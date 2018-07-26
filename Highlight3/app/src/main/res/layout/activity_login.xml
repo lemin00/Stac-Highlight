@@ -6,25 +6,27 @@
     android:layout_height="match_parent"
     android:background="@color/white"
 
-    tools:context=".LoginActivity">
+    tools:context="com.smc.android.highlight.LoginActivity">
 
 
     <ImageButton
         android:id="@+id/sign_btn"
         android:layout_width="306dp"
         android:layout_height="81dp"
+        android:layout_margin="1dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="4dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="4dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
+        android:padding="1dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.452"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.748"
+        app:layout_constraintVertical_bias="0.677"
         app:srcCompat="@drawable/sign_in" />
 
     <EditText
@@ -46,29 +48,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.435" />
-
-    <EditText
-        android:id="@+id/pwd_join"
-        android:layout_width="363dp"
-        android:layout_height="105dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:background="@drawable/teduri"
-        android:ems="10"
-        android:hint="User Password"
-        android:inputType="textPersonName"
-        android:padding="40dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.473"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.578" />
+        app:layout_constraintVertical_bias="0.382" />
 
     <ImageView
         android:id="@+id/imageView8"
@@ -83,13 +63,70 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.831"
+        app:layout_constraintVertical_bias="0.776"
         app:srcCompat="@drawable/or" />
 
+    <Button
+        android:id="@+id/facebook_login"
+        android:layout_width="308dp"
+        android:layout_height="75dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/login_facebook"
+        android:onClick="FaceBook_Login_ButtonCLicked"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.859" />
+
+    <Button
+        android:id="@+id/google_login"
+        android:layout_width="308dp"
+        android:layout_height="79dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/login_google"
+        android:onClick="Google_Login_ButtonClicked"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.409"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.981" />
+
+    <EditText
+        android:id="@+id/pwd_join"
+        android:layout_width="363dp"
+        android:layout_height="108dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/teduri"
+        android:ems="10"
+        android:hint="User Password"
+        android:inputType="textPassword"
+        android:padding="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.537" />
+
     <ImageView
-        android:id="@+id/imageView9"
-        android:layout_width="260dp"
-        android:layout_height="191dp"
+        android:id="@+id/imageView2"
+        android:layout_width="316dp"
+        android:layout_height="178dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginLeft="8dp"
@@ -102,22 +139,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/logo" />
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="136dp"
-        tools:layout_editor_absoluteY="458dp" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="136dp"
-        tools:layout_editor_absoluteY="513dp" />
 
 
 </android.support.constraint.ConstraintLayout>
